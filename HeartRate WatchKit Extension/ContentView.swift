@@ -21,7 +21,8 @@ struct ContentView: View {
             Text("\(value)").font(.system(size: 50))
             Text("BPM").font(.system(size: 15))
         }
-        
+        .padding()
+        .onAppear(perform: start)
     }
     
     
